@@ -13,7 +13,7 @@ async function bootstrap() {
   app.use(urlencoded({ extended: true, limit: '50mb' }));
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
   app.enableCors({
-    origin: ['http://localhost:3000', 'https://sts-softdeath.vercel.app'],
+    origin: ['http://localhost:3000', 'https://sts-softdeath.vercel.app', 'https://frontend-sts.up.railway.app'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
   });
